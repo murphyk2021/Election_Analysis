@@ -54,7 +54,11 @@ To send the results in an easy to read format, we automatically wrote the result
 ![print to txt](https://github.com/murphyk2021/Election_Analysis/blob/725ba7c7f7312a32a9a2dc466e9b1462922c0e92/Resources/print_results_code.PNG)
 
 ## Election Audit Summary
-This code is a rather simple way to go about sorting through and tabulate a large data set. In addition to what we caluclated, it might be interesting to look at the percent voter turnout relative to the population size of each county ("County_voter_turnout"=(votes)/(county_population)* 100).  If there was a significant difference in voter turn out from each county and there was also a difference in how each county tended to lean when they voted, this could be very useful information to future campaign strategies!  
+This code is a rather simple way to go about sorting through and tabulate a large data set. In addition to what we caluclated, it might be interesting to look at the percent voter turnout relative to the population size of each county. 
+
+"County_voter_turnout"=(votes)/(county_population)* 100
+
+If there was a significant difference in voter turn out from each county and there was also a difference in how each county tended to lean when they voted, this could be very useful information to future campaign strategies!  
 
 We could also modify this code by forming a more comprehensive dictionary which included the candidate names, their votes, the county names, and the votes from each county. Similar to what is shown below.
 ![modified dictionary](https://github.com/murphyk2021/Election_Analysis/blob/374a31b9c5963a95984d4926dd87d85090e3cb37/Resources/modified%20dictionary.PNG)
