@@ -42,7 +42,7 @@ We established variables for all of these metrics before we even opened the file
 - total_votes = 0 <-- The count of all votes cast initialized to begin counting at 0.
 
 ### Step 2:  Start collecting information about the cadidates and the counties.   
-We ran two **For loops** with **If statements** - one to create the list of candidates and te dictionary which included both the candidate name and the total count of votes they received.  The other was formatted to fill in the information about the counties.
+We ran two **For loops** with **If statements** - one to create the list of candidates and the dictionary which included both the candidate name and the total count of votes they received.  The other was formatted to fill in the information about the counties.
 ![ForLoops and If Statements](https://github.com/murphyk2021/Election_Analysis/blob/2bb840301373c1888829fcc0cdc5ad730a0dc3aa/Resources/ForLoop_andIfStatement.PNG)
 
 ### Step 3:  Determine the winner!
