@@ -54,7 +54,7 @@ To send the results in an easy to read format, we automatically wrote the result
 ![print to txt](https://github.com/murphyk2021/Election_Analysis/blob/725ba7c7f7312a32a9a2dc466e9b1462922c0e92/Resources/print_results_code.PNG)
 
 ## Election Audit Summary
-This code is a rather simple way to go about sorting through and tabulate a large data set, but there is always room for improvement!
+This code is a rather simple way to go about sorting through and tabulating a large data set, but there is always room for improvement!
 
 In addition to what we caluclated above, it might be interesting to look at the percent voter turnout relative to the population size of each county.  If there was a significant difference in voter turn out from each county and there was also a difference in how each county tended to lean when they voted, this could be very useful information to future campaign strategies!  
 
