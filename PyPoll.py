@@ -48,6 +48,7 @@ with open(file_to_load) as election_data:
 
     #print the candidate name from each row (in column 3)
         candidate_name=row[2]
+
         #If the candidate does not match any existing candidate then add it to the list
         if candidate_name not in candidate_options:
 
@@ -73,7 +74,8 @@ for candidate_name in candidate_votes:
     vote_percentage =float(votes)/float(total_votes)*100
     
     #print each candidates name, vote count, and percentage of the total votes
-    print(f'{candidate_name}: {vote_percentage:.1f}% ({votes:,})\n')
+    #candidate_results=(f'{candidate_name}: {vote_percentage:.1f}% ({votes:,})\n') 
+    #print(candidate_results) 
 
 # 5. The winner of the election based on popular vote.
 #if statement is true, then set the following variables to the values determined above
@@ -82,14 +84,59 @@ for candidate_name in candidate_votes:
         winning_percentage = vote_percentage
         winning_candidate=candidate_name
 
-candidate_votes[candidate_name]+=1
+    candidate_votes[candidate_name]+=1
 
-winning_candidate_summary = (
-    f'-------------------------\n'
-    f'Winner: {winning_candidate}\n'
-    f'Winning Vote Count:  {winning_count:,}\n'
-    f'Winning Percentage: {winning_percentage:.1f}%\n'
-    f'-------------------------\n')
-print(winning_candidate_summary)
 
+#save the results to our text file.
+with open(file_to_save, "w") as txt_file:
+    
+    #Print election results to txt file
+    election_results = (
+        f'\nElection Results\n'
+        f'-------------------------\n'
+        f'Total Votes: {total_votes:,}\n'
+        f'-------------------------\n')
+    print(election_results, end= ' ')
+
+    #save the election results to the text file.
+    txt_file.write(election_results)
+
+    #print candidate name, the percentage, and the total count of votes they each received
+    for candidate_name in candidate_votes:
+
+        #declare 'votes' as the value in the candidate dictionary
+        votes=candidate_votes[candidate_name]
+
+        #Calculate the percentage by dividing the candidate count by the total number of votes
+        vote_percentage =float(votes)/float(total_votes)*100
+    
+        #print each candidates name, vote count, and percentage of the total votes
+        candidate_results=(f'{candidate_name}: {vote_percentage:.1f}% ({votes:,})\n')
+
+        #Print Results
+        print(candidate_results)
+
+        #save the candidate results to the text file.  
+        txt_file.write(candidate_results)
+
+# 5. The winner of the election based on popular vote.
+#if statement is true, then set the following variables to the values determined above
+    if (votes>winning_count) and (vote_percentage>winning_percentage):
+        winning_count=votes
+        winning_percentage = vote_percentage
+        winning_candidate=candidate_name
+
+#Print the winning Candidate Summary
+
+    winning_candidate_summary = (
+        f'-------------------------\n'
+        f'Winner: {winning_candidate}\n'
+        f'Winning Vote Count:  {winning_count:,}\n'
+        f'Winning Percentage: {winning_percentage:.1f}%\n'
+        f'-------------------------\n')
+    print(winning_candidate_summary)
+
+    #save winning summary to the text file.
+    txt_file.write(winning_candidate_summary)
+    
 
