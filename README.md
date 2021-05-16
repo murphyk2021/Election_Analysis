@@ -61,5 +61,5 @@ In addition to what we caluclated above, it might be interesting to look at the 
 
 "County_voter_turnout"=float(votes)/float(county_population)* 100
 
-We could also modify this code to forming a more comprehensive dictionary which included the candidate names, their votes, the county names, and the votes from each county instead of 2 lists and 2 dictionaries. Similar to what is shown below.
+We could also modify this code to form a more comprehensive dictionary which included the candidate names, their votes, the county names, and the votes from each county instead of 2 lists and 2 dictionaries. Similar to what is shown below.
 ![modified dictionary](https://github.com/murphyk2021/Election_Analysis/blob/374a31b9c5963a95984d4926dd87d85090e3cb37/Resources/modified%20dictionary.PNG)
