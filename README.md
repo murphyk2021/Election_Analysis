@@ -2,7 +2,7 @@
 ## An Introduction to Python 
 - - - 
 ## Overview of Project
-In this module students were asked to help Tom with the task of sorting through over 360,000 ballots to determine the winner of a congressional election in Colorado.  Although we could have used Excel to achieve this task, it is much easier and more efficient to use Python and Visual Studio Code instead. There are many similarities between the Python language and VBA, but there are also many differences that needed to be discussed and practiced during this exercise.  During this module we learned:
+In this module students were asked to help Tom with the task of sorting through nearly 370,000 ballots to determine the winner of a congressional election in Colorado.  Although we could have used Excel to achieve this task, it is much easier and more efficient to use Python and Visual Studio Code instead. There are many similarities between the Python language and VBA, but there are also many differences that needed to be discussed and practiced during this exercise.  During this module we learned:
 - proper formatting and syntax or Python language,
 - how to create and manipulate lists and dictionaries,
 - the order of operations of mathematical equations, 
