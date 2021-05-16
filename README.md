@@ -53,5 +53,7 @@ To automatically identify the winner of this election we used another set of For
 To send the results in an easy to read format, we automatically wrote the results to a txt file using the example code below.
 ![print to txt](https://github.com/murphyk2021/Election_Analysis/blob/725ba7c7f7312a32a9a2dc466e9b1462922c0e92/Resources/print_results_code.PNG)
 
-Things to add
-Voter turnout per county (if given the population size)
+## Election Audit Summary
+This code is a rather simple way to go about sorting through and tabulate a large data set. In addition to what we caluclated, it might be interesting to look at the percent voter turnout relative to the population size of each county.  If there was a significant difference in voter turn out from each county and there was also a difference in how each county tended to lean when they voted, this could be very useful information to future campaign strategies!  
+
+We could also modify this code by forming a more comprehensive dictionary which included the candidate names, their votes, the county names, and the votes from each county.  
