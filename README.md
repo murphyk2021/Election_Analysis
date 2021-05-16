@@ -51,6 +51,7 @@ To automatically identify the winner of this election we used another set of For
 
 ### Step 4:  Print results to the txt file.
 To send the results to other users who may not be familiar with Python, we automatically wrote the results to a txt file using the example code below.
+
 ![print to txt](https://github.com/murphyk2021/Election_Analysis/blob/725ba7c7f7312a32a9a2dc466e9b1462922c0e92/Resources/print_results_code.PNG)
 
 ## Election Audit Summary
